@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Teste personagem</title>
+		<script src="jquery-ui.js" type="text/javascript"></script>
+		<script src="C:\Users\Keita\Documents\TADS\TADS3semestre\WEB1\jquery.js" type="text/javascript"></script>
+		<style>
+			body{
+				background: url("img rpg/field.jpg");
+			}
+			
+			
+			#div-entrada{
+			    background: gray;
+			    height:30px;
+			    width:30px;
+			    position: absolute;
+			    top:50;
+			    left:50;
+			    padding: 10px;
+			    text-align: center;
+			    font-weight: bold;
+			 }
+			#div-valde{
+				
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 400;
+			    left: 300;
+			    padding: 10px;
+
+
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<p id="posicao"></p>
+		<div id="div-valde"><img src="img rpg/personagem.png"/></div>
+		<div id="div-entrada">C</div>
+		<script>
+			var $valde = $("#div-valde");
+			var $entrada = $("#div-entrada");
+
+			/*function colide(r1_x, r1_y, r1_h, r1_w, r2_x, r2_y, r2_h, r2_w){  //colisao
+			    if((r1_x+r1_w<r2_x ||="" r1_x="">r2_x+r2_w) || (r1_y+r1_h<r2_y ||="" r1_y="">r2_y+r2_h)) return false;  
+			    	return true;  
+			}  
+			</r2_y></r2_x> */
+
+			$(document).keydown(function(e) {//mexe a div
+			    switch (e.which) {
+				    case 37:
+				        $valde.css('left', $valde.offset().left - 10);
+				        break;
+				    case 38:
+				        $valde.css('top', $valde.offset().top - 10);
+				        break;
+				    case 39:
+				        $valde.css('left', $valde.offset().left + 10);
+				        break;
+				    case 40:
+				        $valde.css('top', $valde.offset().top + 10);
+				        break;
+		   		}
+
+		   		//guarda posicao
+		   		var div_left = $valde.css('left');
+		   		var div_top = $valde.css('top');
+		   		if ($valde.css('left') == $entrada.css('left') && $valde.css('top') == $entrada.css('top')) {
+		   			window.location.replace("proxima.html");
+		   		}
+		   	
+
+			});
+
+			$("div").click(function(){
+				var postop = $(this).css("top");
+				var posleft = $(this).css("left");
+				$("#posicao").css('background-color', 'blue');
+				$("#posicao").html("Minha posicao top e " + postop + "e left " + posleft);
+
+			});
+		</script>
+
+	</body>
+
+</html>
