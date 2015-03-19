@@ -14,11 +14,10 @@
 			    height:30px;
 			    width:30px;
 			    position: absolute;
-			    top:220;
-			    left:350;
+			    top:250;
+			    left:360;
 			    padding: 10px;
-			    text-align: center;
-			    font-weight: bold;
+			    
 			 }
 			#div-valde{
 				
@@ -45,36 +44,5 @@
 
 			}
 
-			/*proxima.html*/
-			#posicao{
-				font-size: 200pt;
-			}
 			
 			
-			#div-entrada{
-			    background: gray;
-			    height:30px;
-			    width:30px;
-			    position: absolute;
-			    top:220;
-			    left:320;
-			    padding: 10px;
-			    text-align: center;
-			    font-weight: bold;
-			 }
-			#div-valde{
-				background:red;
-				height:30px;
-			    width:30px;
-			    position: absolute;
-			    top: 50;
-			    left: 50;
-			    padding: 10px;
-
-
-			}
-
-			img {
-				margin-left:-20px;
-				margin-top:-50px;
-			}

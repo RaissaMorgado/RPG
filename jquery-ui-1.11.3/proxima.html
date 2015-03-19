@@ -9,6 +9,38 @@
 				background: url("img/montanha.jpg");
 				background-size: 1920px;
 			}
+			#posicao{
+				font-size: 200pt;
+			}
+			
+			
+			#div-entrada{
+			    background: gray;
+			    height:30px;
+			    width:30px;
+			    position: absolute;
+			    top:500;
+			    left:1100;
+			    padding: 10px;
+			    text-align: center;
+			    font-weight: bold;
+			 }
+			#div-valde{
+				background:red;
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 500;
+			    left: 100;
+			    padding: 10px;
+
+
+			}
+
+			img {
+				margin-left:-20px;
+				margin-top:-50px;
+			}
 
 
 		</style>
@@ -17,7 +49,7 @@
 
 		<p id="posicao"></p>
 		<div id="div-valde"><img src="img/valde3.png" height="100px"/></div>
-		<div id="div-entrada">C</div>
+		<div id="div-entrada"><img src="img/zane2.png" height="100px"/></div>
 		<script>
 			var $valde = $("#div-valde");
 			var $entrada = $("#div-entrada");
@@ -43,6 +75,7 @@
 		   		var div_top = $valde.css('top');
 		   		if ($valde.css('left') == $entrada.css('left') && $valde.css('top') == $entrada.css('top')) {
 		   			$("#posicao").html("GAME OVER");
+		   			window.location.replace("teste.html");
 
 		   		}
 
