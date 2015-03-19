@@ -1,13 +1,25 @@
-			
-			body{
-				background: black;
+			#div_menu1{
+				background: url("img rpg/field.jpg");
+			    height:8px;
+			    width:8px;
+			    position: absolute;
+
+			    top:500;
+			    left:40	;
+			    padding: 10px;
 			}
 
-			#div-body{
-				background: url("img rpg/field.jpg");
+
+
+
+
+
+			body{
 				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-color: black;
+				background: black url("img/field.jpg") no-repeat fixed;
 			}
-			
 			
 			#div-entrada{
 			    /*background: red;*/
@@ -31,8 +43,8 @@
 			}
 			.msg{
 
-				background:green;
-				color:black;
+				/*background:green;*/
+				color:white;
 				font-family: impact;
 				font-size: 30;
 				top: 100;
