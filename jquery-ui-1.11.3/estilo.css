@@ -1,0 +1,80 @@
+			
+			body{
+				background: black;
+			}
+
+			#div-body{
+				background: url("img rpg/field.jpg");
+				background-repeat: no-repeat;
+			}
+			
+			
+			#div-entrada{
+			    /*background: red;*/
+			    height:30px;
+			    width:30px;
+			    position: absolute;
+			    top:220;
+			    left:350;
+			    padding: 10px;
+			    text-align: center;
+			    font-weight: bold;
+			 }
+			#div-valde{
+				
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 400;
+			    left: 300;
+			    padding: 10px;
+
+			}
+			.msg{
+
+				background:green;
+				color:black;
+				font-family: impact;
+				font-size: 30;
+				top: 100;
+			    left: 930;
+			    position: absolute;
+			    height:120px;
+			    width:300px; 	
+			    padding: 40px;
+
+			}
+
+			/*proxima.html*/
+			#posicao{
+				font-size: 200pt;
+			}
+			
+			
+			#div-entrada{
+			    background: gray;
+			    height:30px;
+			    width:30px;
+			    position: absolute;
+			    top:220;
+			    left:320;
+			    padding: 10px;
+			    text-align: center;
+			    font-weight: bold;
+			 }
+			#div-valde{
+				background:red;
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 50;
+			    left: 50;
+			    padding: 10px;
+
+
+			}
+
+			img {
+				margin-left:-20px;
+				margin-top:-50px;
+			}
