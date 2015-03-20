@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Menu</title>
+		<script src="jquery-ui.js" type="text/javascript"></script>
+		<script src="external\jquery\jquery.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<style>
+			body{
+			background-color: black;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="div_menu1">
+			<p class="titulo">[NOME DO JOGO]</p>
+			<div class="divlink"><a href="inicio.html">Novo jogo</a></div>
+			<div class="divlink"><a href="#" id="sair">Sair</a></div>
+
+			<script>
+				$("#sair").click(function(){
+					
+					if(confirm("Tem certeza?"))
+						$(this).close();
+						
+					else
+						return false;
+				})
+
+			</script>
+
+
+
+		</div>
+
+		
+	</body>
+
+</html>

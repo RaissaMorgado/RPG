@@ -1,26 +1,43 @@
 			#div_menu1{
-				background: url("img rpg/field.jpg");
-			    height:8px;
-			    width:8px;
-			    position: absolute;
-
-			    top:500;
-			    left:40	;
-			    padding: 10px;
-			}
-
-
-
-
-
-
-			body{
+				background: url("img/land.jpg");
 				background-repeat: no-repeat;
-				background-attachment: fixed;
-				background-color: black;
-				background: black url("img/field.jpg") no-repeat fixed;
+			    height: 900px;
+			    width: 500px;
+			    position:fixed;
+				margin-top:40px;
+				margin-left:400px;
+				
+				
+			    text-align: center;
+			}
+			.titulo{
+				font-family:Comic;
+				font-size: 30px;
+				font-variant: small-caps;
 			}
 			
+			.divlink a{ 
+				color: black; 
+				font-family:Comic;
+				font-size: 30px;
+				font-variant: small-caps;
+				text-decoration: none;
+			} 
+
+			.divlink a:hover{ 
+				color: black; 
+				background: red;
+				font-family:Comic;
+				font-size: 30px;
+				font-variant: small-caps; 
+				text-decoration: none;
+			} 
+			.div_historia{
+				background: gray;
+				color:red;
+			}
+
+
 			#div-entrada{
 			    /*background: red;*/
 			    height:30px;
