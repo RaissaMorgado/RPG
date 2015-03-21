@@ -21,9 +21,10 @@
 		   		}
 
 		   	// Colisões com personagem
-		   	if (($valde.css('left') == $entrada.css('left')) && ($valde.css('top') == ($entrada.css('top')))) {
+		   	if ((parseInt($valde.css('left')) == parseInt($entrada.css('left'))) &&
+		   		parseInt($valde.css('top')) == (parseInt($entrada.css('top'))+20)) {
 		   		$(".msg").show();
-		   		$(".msg").html("Oi viadão<br/><a href='proxima.html'>TO THE BATTLE!!!</a>");
+		   		$(".msg").html("<p class='titulo'>Oi viadão<br/><a href='proxima.html'>TO THE BATTLE!!!</a></p>");
 		   	}else{
 		   		$(".msg").hide();
 		   	}

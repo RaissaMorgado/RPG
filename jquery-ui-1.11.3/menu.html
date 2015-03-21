@@ -13,15 +13,17 @@
 	</head>
 	<body>
 		<div id="div_menu1">
-			<p class="titulo">[NOME DO JOGO]</p>
+			<p class="titulo">[JOGO LEGAL]</p>
 			<div class="divlink"><a href="inicio.html">Novo jogo</a></div>
-			<div class="divlink"><a href="#" id="sair">Sair</a></div>
-
+			
 			<script>
+				var tab = window.open("","_self");
+  				tab.close();
+				
 				$("#sair").click(function(){
 					
 					if(confirm("Tem certeza?"))
-						$(this).close();
+						
 						
 					else
 						return false;
