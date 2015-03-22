@@ -2,6 +2,8 @@
 
 	var $valde = $("#div-valde");
 	var $entrada = $("#div-entrada");
+	var $hotel = $("#div-hotel");
+	
 			
 			// Movimento do personagem
 			$(document).keydown( function(e){
@@ -18,18 +20,29 @@
 				    case 40:
 				        $valde.css('top', $valde.offset().top + 10);
 				        break;
-		   		}
-
-		   	// Colisões com personagem
-		   	if ((parseInt($valde.css('left')) == parseInt($entrada.css('left'))) &&
-		   		parseInt($valde.css('top')) == (parseInt($entrada.css('top'))+20)) {
-		   		$(".msg").show();
-		   		$(".msg").html("<p class='titulo'>Oi viadão<br/><a href='proxima.html'>TO THE BATTLE!!!</a></p>");
-		   	}else{
-		   		$(".msg").hide();
 		   	}
 
+			   	// Colisões com personagem
+			   	if ((parseInt($valde.css('left')) == parseInt($entrada.css('left'))) &&
+			   		parseInt($valde.css('top')) == (parseInt($entrada.css('top'))+20)) {
+			   		$(".msg").show();
+			   		$(".msg").html("<p class='titulo'>Oi viadão<br/><a href='proxima.html'>TO THE BATTLE!!!</a></p>");
+			   	}else{
+			   		$(".msg").hide();
+			   	}
+
+			   	   /*	// Colisões com hotel
+			   	if ((parseInt($valde.css('left')) == parseInt($hotel.css('left'))) &&
+			   		parseInt($valde.css('top')) == parseInt($hotel.css('top'))){
+
+			   			alert("FUNCIONA SUA PIRANHA");
+			   		}else{
+			   			return false;
+			   		}*/
+
 			});
+
+
 
 			$("#div-valde").click(function(){
 				var postop = $(this).css("top");
@@ -46,3 +59,4 @@
 				$("#posicao").html("Minha posicao top e " + postop + "e left " + posleft);
 
 			});
+

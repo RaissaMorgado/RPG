@@ -1,9 +1,13 @@
 <html>
 	<head>
-		<title>Teste personagem</title>
+		<title>Luta</title>
 		<script src="jquery-ui.js" type="text/javascript"></script>
 		<script src="external\jquery\jquery.js" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+	    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 	
 		<style>
 			body{
@@ -41,6 +45,11 @@
 	<body>
 
 		<p id="posicao"></p>
+
+		<div id="progressbar-5">
+        	<div class="progress-label">Loading...</div>
+      	</div>
+
 		<div class="msg1"><marquee behavior="alternate">Nome: Zane /  LV: 999999</marquee></div>
 		<div id="div-entrada"><img src="img/zane1.png" height="100px"/></div>
 		<div class="msg2">
@@ -48,8 +57,34 @@
 			<br/>
 			<p><input type="submit" value="Ataque 1"/>   <input type="submit" value="Ataque 2"/>   <input type="submit" value="Ataque 3"/></p>
 		</div>
-		
+				
 		<script>
+			/*progress bar*/
+			$(function() {
+		         var progressbar = $( "#progressbar-5" );
+		         progressLabel = $( ".progress-label" );
+		         $( "#progressbar-5" ).progressbar({
+		            value: false,
+		            change: function() {
+		               progressLabel.text( 
+		                  progressbar.progressbar( "value" ) + "%" );
+		            },
+		            empty: function() {
+		               progressLabel.text( "dead" );
+		            }
+		         });
+		         function progress() {
+		            var val = progressbar.progressbar( "value" ) || 100;
+		            progressbar.progressbar( "value", val - 1 );
+		            if ( val > 1 ) {
+		               setTimeout( progress, 100 );
+		            }
+		         }
+		         setTimeout( progress, 3000 );
+      });
+
+			
+  				
 			
 			/* Nao sera necessario mover o valde, mas sim os ataques
 
@@ -85,7 +120,6 @@
 			});*/
 
 		</script>
-		
 
 	</body>
 
