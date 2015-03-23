@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 100%;
     margin:0;
     padding:0;
-    color:#444;
+    color:#E6E8FA;
 }
 q:before,q:after {
     content:'';
@@ -59,7 +59,9 @@ body{
 	position: relative;
 }
 h1{
-	font-size: 6em;
+	font-size: 3em;
+	font-family: 'Fredericka the Great';
+	text-align: justify;
 }
 p{
 	font-size: 2em;
@@ -71,6 +73,8 @@ p{
 }
 .section{
 	text-align:center;
+	padding-left: 90pt;
+	padding-right: 90pt;
 }
 #menu li {
 	display:inline-block;
