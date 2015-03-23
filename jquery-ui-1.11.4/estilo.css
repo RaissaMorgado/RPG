@@ -1,12 +1,35 @@
 			#div_menu1{
-				background: url("img/land.jpg");
+				height: 100%;
+				width: 65%;
+				background-image: url("img/land.jpg");
+				background-size: 100%;
 				background-repeat: no-repeat;
 			    position: absolute;
 			    top: 50%;
 			    left: 50%;
 			    transform: translate(-50%, -50%);
 				text-align: center;
+				margin: auto;
 			}
+			#div_menu2{
+				background:black;
+				color: white; 
+				font-family:Comic;
+				font-size: 50px;
+				font-weight: bolder;
+				font-variant: small-caps;
+				color:white;
+				width: 50%;
+				height: 10%;
+				top: 10%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+				text-align: center;
+				vertical-align:middle;
+				position: relative;
+				opacity:0.65;
+			}
+			
 			.titulo{
 				color: black; 
 				font-family:Comic;
@@ -43,8 +66,8 @@
 			}
 
 
-			#div-entrada{
-			    /*background: red;*/
+			#div-zane{
+			    background: red;
 			    height:30px;
 			    width:30px;
 			    position: absolute;
@@ -55,22 +78,71 @@
 			 }
 			 #div-hotel{
 			    background: red;
-			    height:2%;
-			    width:1%;
+			    height:30px;
+			    width:30px;
 			    position: absolute;
-			    top:25%;
-			    left:43%;
+			    top:150px;/*28%*/
+			    left:580px;
 			    padding: 10px;
 			}
 			#div-valde{
-				
+				background: blue;
 				height:30px;
 			    width:30px;
 			    position: absolute;
-			    top: 400;
-			    left: 500;
+			    top: 400px;
+			    left: 500px;
 			    padding: 10px;
 
+			}
+			#div-ann{
+				background: red;
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 320px;
+			    left: 830px;
+			    padding: 10px;
+			}
+			#div-leos{
+				background: red;
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 210px;
+			    left: 450px;
+			    padding: 10px;
+			}
+			#div-saida{
+				background: red;
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 430px;
+			    left: 480px;
+			    padding: 10px;
+			}
+			#div-forest{
+				background: red;
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 150px;
+			    left: 930px;
+			    padding: 10px;
+			}
+			.portal{
+				height: 60px;
+				transform: translate(-20%, -30%);
+			}
+			#div-forest_saida{
+				background: red;
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 540px;
+			    left: 890px;
+			    padding: 10px;
 			}
 			.msg{
 
@@ -105,6 +177,36 @@
 				position: relative;
 				opacity:0.65;
 								
+
+			}
+			#msg_ann{
+
+				background:#cfc;
+				color:white;
+				width: 66%;
+				height: 15%;
+				top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+				vertical-align: middle;
+				position: relative;
+				opacity:0.65;
+			
+
+			}
+			#msg_leos{
+
+				background:#cfc;
+				color:white;
+				width: 66%;
+				height: 15%;
+				top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+				vertical-align: middle;
+				position: relative;
+				opacity:0.65;
+			
 
 			}
 

@@ -1,8 +1,34 @@
-	
+		// Returns 1 if objects collide
+				function collisionSolver(elem1, elem2) {
+				    return comparePositions(getPosition(elem1), getPosition(elem2));
+				}
+
+				function getPosition(elem){
+				 var pos, width, height;
+				    pos = elem.position();
+				    width = elem.width();
+				    height = elem.height();
+				    return [ [ pos.left, pos.left + width ], [ pos.top, pos.top + height ] ];
+				}
+
+				function comparePositions (p1, p2){
+				 var r1, r2;
+				    r1 = p1[0] < p2[0] ? p1 : p2;
+				    r2 = p1[0] < p2[0] ? p2 : p1;
+				    return r1[1] > r2[0] || r1[0] === r2[0];
+				}  
+
+
+
 
 	var $valde = $("#div-valde");
-	var $entrada = $("#div-entrada");
+	var $zane = $("#div-zane");
 	var $hotel = $("#div-hotel");
+	var $saida = $("#div-saida");
+	var $ann = $("#div-ann");
+	var $forest = $("#div-forest");
+	var $forest_saida = $("#div-forest_saida");
+	var $leos = $("#div-leos");
 	
 			
 			// Movimento do personagem
@@ -22,24 +48,60 @@
 				        break;
 		   	}
 
-			   	// Colisões com personagem
-			   	if ((parseInt($valde.css('left')) == parseInt($entrada.css('left'))) &&
-			   		parseInt($valde.css('top')) == (parseInt($entrada.css('top'))+20)) {
+			   	// Colisões com zane
+			   	if ((parseInt($valde.css('left')) == parseInt($zane.css('left'))) &&
+			   		parseInt($valde.css('top')) == (parseInt($zane.css('top'))+20)) {
 			   		$(".msg").show();
 			   		$(".msg").html("<p class='titulo'>Oi viadão<br/><a href='proxima.html'>TO THE BATTLE!!!</a></p>");
 			   	}else{
 			   		$(".msg").hide();
 			   	}
 
-			   	   /*	// Colisões com hotel
-			   	if ((parseInt($valde.css('left')) == parseInt($hotel.css('left'))) &&
-			   		parseInt($valde.css('top')) == parseInt($hotel.css('top'))){
+			   	//console.log('Valde (' + $valde.css('left') + ',' + $valde.css('top') + ') - Hotel (' + $hotel.css('left') + ',' + $hotel.css('top') + ')');
+			   	
+			   	   // Colisões com hotel-entrada
+			   if ((parseInt($valde.css('left')) == parseInt($hotel.css('left'))) &&
+			   		parseInt($valde.css('top')) == parseInt($hotel.css('top'))) {
 
-			   			alert("FUNCIONA SUA PIRANHA");
-			   		}else{
-			   			return false;
-			   		}*/
+			   			window.location.replace('hotel.html');
+			   		}
+			   		// Colisões com hotel-saida
+			   if ((parseInt($valde.css('left')) == parseInt($saida.css('left'))) &&
+			   		parseInt($valde.css('top')) == parseInt($saida.css('top'))) {
 
+			   			window.location.replace('teste.html');
+			   		}
+			   		// Colisões com ann
+			   	if ((parseInt($valde.css('left')) == (parseInt($ann.css('left'))-20)) &&
+			   		parseInt($valde.css('top')) == parseInt($ann.css('top'))) {
+			   		$("#msg_ann").show();
+			   		$("#msg_ann").html("<p class='titulo'>Pronto para morrer?<br/><a href='proxima.html'>TO THE BATTLE!!!</a></p>");
+			   	}else{
+			   		$("#msg_ann").hide();
+			 
+			   	}
+			   	// Colisões com floresta_entrada
+			   if ((parseInt($valde.css('left')) == parseInt($forest.css('left'))) &&
+			   		parseInt($valde.css('top')) == parseInt($forest.css('top'))) {
+
+			   			window.location.replace('forest.html');
+			   		}
+			   	// Colisões com floresta_saida
+			   if ((parseInt($valde.css('left')) == parseInt($forest_saida.css('left'))) &&
+			   		parseInt($valde.css('top')) == parseInt($forest_saida.css('top'))) {
+
+			   			window.location.replace('teste.html');
+			   		}
+			   	// Colisões com leos
+			   	if ((parseInt($valde.css('left')) == (parseInt($leos.css('left'))+20)) &&
+			   		parseInt($valde.css('top')) == parseInt($leos.css('top'))) {
+			   		$("#msg_leos").show();
+			   		$("#msg_leos").html("<p class='titulo'>Morre deabo<br/><a href='proxima.html'>TO THE BATTLE!!!</a></p>");
+			   	}else{
+			   		$("#msg_leos").hide();
+			   	}
+
+			   		
 			});
 
 
