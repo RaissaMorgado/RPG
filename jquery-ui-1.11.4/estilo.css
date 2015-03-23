@@ -52,6 +52,16 @@
 				text-decoration: none;
 			}
 
+			#bgfield {
+				background: url('img/field.jpg');
+				width: 889px;
+				height: 765px; 
+			}
+
+			#bgbody {
+				background-color: #333333;
+			}
+
 			.divlink a:hover{ 
 				color: black; 
 				background: red;
@@ -67,26 +77,23 @@
 
 
 			#div-zane{
-			    background: red;
 			    height:30px;
 			    width:30px;
 			    position: absolute;
-			    top:250;
-			    left:360;
+			    top:370;
+			    left:140;
 			    padding: 10px;
 			    
 			 }
 			 #div-hotel{
-			    background: red;
 			    height:30px;
 			    width:30px;
 			    position: absolute;
-			    top:150px;/*28%*/
-			    left:580px;
+			    top:220px;/*28%*/
+			    left:350px;
 			    padding: 10px;
 			}
 			#div-valde{
-				background: blue;
 				height:30px;
 			    width:30px;
 			    position: absolute;
@@ -123,12 +130,11 @@
 			    padding: 10px;
 			}
 			#div-forest{
-				background: red;
 				height:30px;
 			    width:30px;
 			    position: absolute;
-			    top: 150px;
-			    left: 930px;
+			    top: 220px;
+			    left: 740px;
 			    padding: 10px;
 			}
 			.portal{

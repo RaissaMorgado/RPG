@@ -18,9 +18,6 @@
 				    return r1[1] > r2[0] || r1[0] === r2[0];
 				}  
 
-
-
-
 	var $valde = $("#div-valde");
 	var $zane = $("#div-zane");
 	var $hotel = $("#div-hotel");
@@ -51,10 +48,17 @@
 			   	// Colisões com zane
 			   	if ((parseInt($valde.css('left')) == parseInt($zane.css('left'))) &&
 			   		parseInt($valde.css('top')) == (parseInt($zane.css('top'))+20)) {
-			   		$(".msg").show();
-			   		$(".msg").html("<p class='titulo'>Oi viadão<br/><a href='proxima.html'>TO THE BATTLE!!!</a></p>");
+			   		$(function(){
+						$( "#dialog-message" ).dialog({
+							width: 250,
+							height: 200,
+							modal: true,
+						});
+					});
+			   		$("#dialog-message").show();
+			   		$("#dialog-message").html('<p align="justify">Valde se aproxima de Zane, que o recepciona de forma deveras filha da puta: "Oi viadão!". Valde não vai deixar barato. <a href="proxima.html">TO THE BATTLE!!!</a></p>');
 			   	}else{
-			   		$(".msg").hide();
+			   		$("#dialog-message").hide();
 			   	}
 
 			   	//console.log('Valde (' + $valde.css('left') + ',' + $valde.css('top') + ') - Hotel (' + $hotel.css('left') + ',' + $hotel.css('top') + ')');
