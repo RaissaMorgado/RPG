@@ -8,17 +8,38 @@
 
 	<link rel="stylesheet" type="text/css" href="fullPage.js-master/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="fullPage.js-master/examples/examples.css" />
+	<link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
 
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 	<script type="text/javascript" src="fullPage.js-master/jquery.fullPage.js"></script>
+
+	<style>
+			a{
+				text-decoration: none;
+				font-size: 2em;
+				font-family: 'Fredericka the Great';
+				text-align: justify;
+				font-weight: bolder;
+			}
+			.divlink a:hover{ 
+				color: black; 
+				background: red;
+				font-family: 'Fredericka the Great';
+				font-size: 30px;
+				font-size: 2em;
+				text-decoration: none;
+			} 
+	</style>
+
+
 	<script type="text/javascript">
 		
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['black', 'black', 'black', 'black', 'black']
+				sectionsColor: ['#181818', '#181818', '#181818', '#181818', '#181818']
 			});
 		});
 	</script>
@@ -27,15 +48,20 @@
 <body>
 
 <div id="fullpage">
-	<div class="section active" id="section0"><h1>[Historia]</h1></div>
-	<!--<div class="section" id="section1">
-	    <div class="slide "><h1>[Historia1]</h1></div>
-	    <div class="slide active"><h1>[Historia 2]</h1></div>
-	    <div class="slide"><h1>[Historia 3]</h1></div>
-	    <div class="slide"><h1>[Historia 4]</h1></div>
-	</div>-->
-	<div class="section" id="section2"><h1>[Historia 5]</h1></div>
-	<div class="section" id="section3"><h1>[Historia 6]</h1><a class="divlink" href="teste.html">Eu entendi. Vamos começar!</a></div>
+	
+	<div class="section" id="section1">
+	    
+	    <div class="slide active"><h1>Esse jogo se passa em uma época distante, onde o sangue que circulava pelas veias era um critério extremamente importante, superando até mesmo o valor do ouro. Nada superava a linhagem! Nada... a não ser Magora, um torneio onde guerreiros lutavam até a morte em uma competição de sobrevivência para satisfazer a perversão de um soberano cruel...</h1></div>
+	    <div class="slide"><h1>As regras eram simples: O último em pé era o último vivo. Aquele que vencesse e se tornasse o melhor guerreiro, teria a sua liberdade e a de sua família conquistadas para sempre. E assim surgiram vários homens para conquistar essa grandiosa chance, entretanto por razão genealógicas, não tiveram chance alguma contra os grandiosos guerreiros...</h1></div>
+	    <div class="slide"><h1> que possuíam equipamentos 	muito superiores e conhecimento de supervivência. Muitos morreram e tiveram seus sonhos destruídos, deixando apenas uma pequena elite no final. Um entre eles se destacava Um jovem filho de escravos da Coroa, chamado Valde, cansado de ver o sofrimento de seus pais e irmãos, decidiu enfrentar os melhores e dar um fim a aquela tirania!</h1></div>
+	    <div class="slide">
+	    	<h1>Controle Valde pela vila e ajude-o em suas batalhas, tornando-o o melhor guerreiro de Magora!</h1>
+	    	<p class="divlink"><a href="teste.html">Eu entendi! Vamos lá!</a>
+
+	    </div> 
+
+	</div>
+	
 </div>
 
 </body>
