@@ -1,0 +1,295 @@
+			@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+
+			#div_menu1{
+				height: 100%;
+				width: 65%;
+				background-image: url("img/land.jpg");
+				background-size: 100%;
+				background-repeat: no-repeat;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+				text-align: center;
+				margin: auto;
+			}
+			#div_menu2{
+				background:black;
+				color: white; 
+				font-family:Comic;
+				font-size: 50px;
+				font-weight: bolder;
+				font-variant: small-caps;
+				color:white;
+				width: 50%;
+				height: 10%;
+				top: 10%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+				text-align: center;
+				vertical-align:middle;
+				position: relative;
+				opacity:0.65;
+			}
+			
+			.titulo{
+				color: black; 
+				font-family:Comic;
+				font-size: 30px;
+				font-weight: bolder;
+				font-variant: small-caps;
+				text-decoration: none;
+				text-align: center;	
+			}
+			
+			.divlink a{ 
+				color: black; 
+				font-family:Comic;
+				font-size: 30px;
+				font-variant: small-caps;
+				text-decoration: none;
+			} 
+
+			a{
+				text-decoration: none;
+			}
+
+			#bgfield {
+				background: url('img/field.jpg');
+				width: 889px;
+				height: 765px; 
+			}
+
+			#bgbody {
+				background-color: #333333;
+			}
+
+			.divlink a:hover{ 
+				color: black; 
+				background: red;
+				font-family:Comic;
+				font-size: 30px;
+				font-variant: small-caps; 
+				text-decoration: none;
+			} 
+			.div_historia{
+				background: gray;
+				color:red;
+			}
+
+			#textoleft {
+				font-family: 'Slabo 27px';
+				color: white;
+				font-size: 20pt;
+				text-align: justify;
+				margin-top: 70pt;
+			}
+			#textoright {
+				font-family: 'Slabo 27px';
+				color: white;
+				font-size: 15pt;
+				text-align: justify;
+				margin-top: 10pt;
+			}
+
+
+			#div-zane{
+			    height:30px;
+			    width:30px;
+			    position: absolute;
+			    top:370;
+			    left:140;
+			    padding: 10px;
+			    
+			 }
+			 #div-hotel{
+			    height:30px;
+			    width:30px;
+			    position: absolute;
+			    top:220px;/*28%*/
+			    left:350px;
+			    padding: 10px;
+			}
+			#div-valde{
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 400px;
+			    left: 500px;
+			    padding: 10px;
+
+			}
+			#div-valde-leos{
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 530px;
+			    left: 650px;
+			    padding: 10px;
+
+			}
+			#div-ann{
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 390px;
+			    left: 580px;
+			    padding: 10px;
+			}
+			#div-leos{
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 330px;
+			    left: 410px;
+			    padding: 10px;
+			}
+			#div-saida{
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 490px;
+			    left: 250px;
+			    padding: 10px;
+			}
+			#div-forest{
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 220px;
+			    left: 740px;
+			    padding: 10px;
+			}
+			.portal{
+				height: 60px;
+				transform: translate(-20%, -30%);
+			}
+			#div-forest_saida{
+				height:30px;
+			    width:30px;
+			    position: absolute;
+			    top: 600px;
+			    left: 653px;
+			    padding: 10px;
+			}
+			.msg{
+
+				background:#cfc;
+				color:white;
+				width: 66%;
+				height: 15%;
+				top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+				vertical-align: middle;
+				position: relative;
+				opacity:0.65;
+			
+
+			}
+			.msg1{
+				background:black;
+				color: white; 
+				font-family:'Slabo 27px';
+				font-size: 18pt;
+				font-weight: bolder;
+				font-variant: small-caps;
+				color:white;
+				width: 40%;
+				height: 10%;
+				opacity:0.65;
+			}
+
+			a:link { color:#ffffff; }
+		   	a:visited { color:#ffffff; }
+		   	a:hover { color:#ffffff; }
+		   	a:active { color:#ffffff; }
+
+			#ataque {
+				padding-left: 15pt;
+			}
+
+			body > p {
+				color: black; 
+				font-family:'Slabo 27px';
+				font-size: 15pt;
+				font-weight: bolder;
+				text-align: center;
+				vertical-align:middle;
+			}
+			
+
+			}
+			#msg_ann{
+
+				background:#cfc;
+				color:white;
+				width: 66%;
+				height: 15%;
+				top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+				vertical-align: middle;
+				position: relative;
+				opacity:0.65;
+			
+
+			}
+			#msg_leos{
+
+				background:#cfc;
+				color:white;
+				width: 66%;
+				height: 15%;
+				top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+				vertical-align: middle;
+				position: relative;
+				opacity:0.65;
+			
+
+			}
+
+			.msg2{
+				background:black;
+				color: white; 
+				font-family:Comic;
+				font-size: 12px;
+				font-weight: bolder;
+				font-variant: small-caps;
+				color:white;
+				width: 20%;
+				height: 5%;
+				opacity:0.65;
+			}
+
+			#fundo{
+				background:url("img/field.jpg");
+				background-repeat: no-repeat;
+			    position: fixed;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+				text-align: center;	
+				margin: auto;
+			}
+		
+	         .ui-widget-header {
+	            background: #cedc98;
+	            border: 1px solid #DDDDDD;
+	            color: #333333;
+	            font-weight: bold;
+	            width: 50%;
+	         }
+	         .progress-label {
+	            position: absolute;
+	            left: 50%;
+	            top: 13px;
+	            font-weight: bold;
+	            text-shadow: 1px 1px 0 #fff;
+	         }
+	      
+
+			
+			

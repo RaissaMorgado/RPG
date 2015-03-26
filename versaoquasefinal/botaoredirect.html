@@ -1,0 +1,24 @@
+ <p class="p2"> ESCOLHA: </p>
+ <select id="opcao">
+  <h2><option value="1">Vou me esconder.</option></h2>
+  <h2><option value="2">Vou até lá.</option></h2>
+</select>
+<p id="botao_seguir"><span class="botao">SEGUIR</span></p>
+
+<script>
+$("select").change(function() {
+	$("select option:selected").each(function() {
+		var selecionado = 0;
+		selecionado = $(this).val();
+		if (selecionado == 1) {
+			$("#botao_seguir").click(function (){
+				window.location.replace('PAGINA_REDIRECIONAR_OPCAO_1.html');
+			})
+		} else if (selecionado == 2) {
+			$("#botao_seguir").click(function (){
+				window.location.replace('PAGINA_REDIRECIONAR_OPCAO_2.html');
+			})
+		}
+	});
+})
+</script>
