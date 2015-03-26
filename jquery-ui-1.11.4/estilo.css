@@ -50,6 +50,9 @@
 
 			a{
 				text-decoration: none;
+				font-size: 3em;
+				font-family: 'Fredericka the Great';
+				text-align: justify;
 			}
 
 			#bgfield {
@@ -106,7 +109,7 @@
 				background: red;
 				height:30px;
 			    width:30px;
-			    position: absolute;
+			    position: fixed;
 			    top: 320px;
 			    left: 830px;
 			    padding: 10px;
@@ -115,7 +118,7 @@
 				background: red;
 				height:30px;
 			    width:30px;
-			    position: absolute;
+			    position: fixed;
 			    top: 210px;
 			    left: 450px;
 			    padding: 10px;
@@ -124,7 +127,7 @@
 				background: red;
 				height:30px;
 			    width:30px;
-			    position: absolute;
+			    position: fixed;
 			    top: 430px;
 			    left: 480px;
 			    padding: 10px;
@@ -132,9 +135,9 @@
 			#div-forest{
 				height:30px;
 			    width:30px;
-			    position: absolute;
-			    top: 220px;
-			    left: 740px;
+			    position: fixed;
+			    top: 150px;
+			    left: 930px;
 			    padding: 10px;
 			}
 			.portal{
@@ -260,7 +263,6 @@
 	            font-weight: bold;
 	            text-shadow: 1px 1px 0 #fff;
 	         }
-	      
-
+	        
 			
 			
